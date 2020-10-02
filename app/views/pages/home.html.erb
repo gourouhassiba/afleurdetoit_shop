@@ -8,23 +8,24 @@
 </head>
       <meta charset="utf-8">
       <title>A fleur de toit</title>
-      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);  background-size: cover; background-position: center;padding: 150px 0;">
-        <div class="container">
-          <h1 style="  margin: 0;color: white;text-shadow: 1px 1px 3px rgba(0,0,0,0.2);font-size: 32px;font-weight: bold;">A fleur de toit <strong>creative skills</strong> to <strong>create together</strong>!</h1>
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)); background-position: center;">
+        <%= image_tag "afleurdetoi.png", :class => "style_image" %>
+        <div class="container" style="margin-top: -245px;">
+          <h1 style="  margin: 0;color: black;text-shadow: 1px 1px 3px rgba(0,0,0,0.2);font-size: 32px;font-weight: bold;">A fleur de toit <strong>creative</strong> to <strong>create together</strong>!</h1>
           <p style="  font-size: 20px;color: white;opacity: .7;text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Lorem ipsum.</p>
-          <a class="btn btn-flat" href="flowers" onmouseover="this.style.background='#FFFF99';this.style.color='#FF0000';" onmouseout="this.style.background='#1EDD88';this.style.color='#1EDD88'" style="    color: white;padding: 8px 24px; border-radius: 4px;background: #1EDD88;transition: background 0.3s ease;">View creation</a>
+          <a class="btn btn-flat" href="flowers" onmouseover="this.style.background='#FFFF99';this.style.color='#FF0000';" onmouseout="this.style.background='blue';this.style.color='blue'" style="    color: white;padding: 8px 24px; border-radius: 4px;background: blue;transition: background 0.3s ease;">View creation</a>
         </div>
       </div>
-      <div class="card-category" style="margin-top: 25px; height:400px; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">Breakfast
+      <div class="card-category" style=" margin-top: 150px; height:400px; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">Breakfast
       </div>
       <h1>Hello buddies!</h1>
     </body>
     <div class="card-product" style="  overflow: hidden;height: 120px;background: white;box-shadow: 0 0 15px rgba(0,0,0,0.2);display: flex;align-items: center;}">
       <a href="">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" style="  height: 100%;width: 120px;object-fit: cover;" />
+        <%= image_tag "119643530_689136318376831_7543250266339039015_n(1).jpg", :class => "img_home"%>
       </a>
       <div class="card-product-infos">
-        <h2 style="  font-size: 16px;font-weight: bold;margin: 0;">Product name</h2>
+        <h2 style="  font-size: 16px;font-weight: bold;margin: 0;">Stephane, owner Afleurdetoit</h2>
         <p style="  font-size: 12px;line-height: 1.4;opacity: .7;margin-bottom: 0;margin-top: 8px;">Product description with <strong>relevant info</strong> only.</p>
       </div>
     </div>

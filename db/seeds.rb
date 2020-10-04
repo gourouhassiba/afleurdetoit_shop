@@ -21,5 +21,6 @@ Flower.create!(name: 'luminaire',rating: 5, price: 255, descripion:"luminaire , 
 Flower.create!(name: 'luminaire',rating: 5, price: 350, descripion:"luminaire en zinc,cuivre et châtaigner bois brûlé exclusivité", category: decoration, photo_url:"https://i.etsystatic.com/24937432/r/il/477d0a/2509447066/il_1588xN.2509447066_jdpu.jpg")
 Flower.create!(name: 'luminaire crépuscule',rating: 4, price: 305, descripion:"luminaire 'crépuscule' base en teck patiné bois de cerisier brulé cordon vintage et interrupteur bakélite ", category:decoration, photo_url:"https://i.etsystatic.com/24937432/r/il/f2ad3a/2500345152/il_1588xN.2500345152_qhur.jpg")
 
-
+puts 'Creating Users'
+User.create(email:"bibahassiba@hotmail.fr", encrypted_password: "123456")
 puts 'Finished!'

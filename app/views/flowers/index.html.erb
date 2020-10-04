@@ -1,7 +1,7 @@
 <div class="container">
   <h1 style="text-align:center">Creations</h1>
   <div class="row">
-    <%@flowers.each do |flower| %>
+    <% @flowers.each do |flower| %>
       <div class="col-6 col-md-4">
         <div class="card" style="margin-bottom: 50px; height: 546px;">
           <%= image_tag flower.photo_url , class: "card-img-top", style:"height: 300px;" %>

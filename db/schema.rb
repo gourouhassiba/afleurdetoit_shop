@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_04_174900) do
+ActiveRecord::Schema.define(version: 2020_10_04_174256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,13 +24,14 @@ ActiveRecord::Schema.define(version: 2020_10_04_174900) do
   create_table "flowers", force: :cascade do |t|
     t.string "name"
     t.integer "rating"
+    t.string "price"
     t.string "category"
     t.string "descripion"
     t.bigint "category_id", null: false
     t.string "photo_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "price_cents", default: 0, null: false
+    t.integer "price_cents"
     t.index ["category_id"], name: "index_flowers_on_category_id"
   end
 
@@ -38,7 +39,6 @@ ActiveRecord::Schema.define(version: 2020_10_04_174900) do
     t.string "state"
     t.string "flower_name"
     t.integer "amount_cents", default: 0, null: false
-    t.string "amount_currency", default: "EUR", null: false
     t.string "checkout_session_id"
     t.bigint "user_id", null: false
     t.bigint "flower_id", null: false

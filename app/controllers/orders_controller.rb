@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
     flower = Flower.find(params[:flower_id])
     order  = Order.create!(flower: flower, flower_name: flower.name, amount: flower.price, state: 'pending', user: current_user)
 
-    session = Stripe::Checkout::Session.create(
+    session = Stripe::Checkout::Session.create!(
       payment_method_types: ['card'],
       line_items: [{
         name: flower.name,

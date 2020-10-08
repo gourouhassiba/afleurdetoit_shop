@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+gem 'acts-as-taggable-on', '~> 6.0'
 gem 'stripe_event'
+gem 'stocker', '~> 1.3', '>= 1.3.4'
 ruby '2.6.6'
 gem 'stripe'
 gem 'money-rails'

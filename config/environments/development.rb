@@ -61,13 +61,3 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
-development:
-  secret_key_base: <my keys are inserted here>
-  stripe_public_key: <my keys are inserted here>
-  stripe_private_key: <my keys are inserted here>
-
-test:
-  secret_key_base: <my keys are inserted here>
-  stripe_public_key: <my keys are inserted here>
-  stripe_private_key: <my keys are inserted here>
-

@@ -1,18 +1,28 @@
 <div class="container">
-  <h1 style="text-align:center">Creations</h1>
-  <div class="row">
-    <% @flowers.each do |flower| %>
-      <div class="col-6 col-md-4">
-        <div class="card" style="margin-bottom: 50px; height: 546px;">
-          <%= image_tag flower.photo_url , class: "card-img-top", style:"height: 300px;" %>
-          <div class="card-body">
-            <h5 class="card-title"><%= flower.name %></h5>
-            <p class="card-text"><%= flower.category.name %></p>
-            <%= link_to "More details", flower_path(flower), class: "btn btn-primary", style: "margin-top: 60px;" %>
-           <p>Amount: <%= humanized_money_with_symbol(flower.price) %></p>
+  <h1 class="text-center mt-4">Creations 🤩</h1>
+  <!-- SEARCHBAR -->
+  <%= simple_form_for :filter, url: flowers_path, method: :get do |f| %>
+    <fieldset class="form-group check_boxes required filter_tags mt-5">
+      <legend class="col-form-label pt-0">
+        Choose your categories <abbr title="required">*</abbr>
+      </legend>
+      <input type="hidden" name="filter[tags][]" value="">
+    </fieldset>
+
+      <div class="filter-tags">
+        <% Flower.all.map(&:tags).flatten.uniq.each do |tag| %>
+          <div class="form-check" style="margin-bottom: 14px;">
+            <input class="form-check-input check_boxes required d-none" type="checkbox" value="<%= tag %>" name="filter[tags][]" id="filter_tags_<%= tag %>" <%= 'checked' if @selected_filters.include?(tag.name) %>>
+            <label class="form-check-label collection_check_boxes filter-tag <%= 'active' if @selected_filters.include?(tag.name) %>" for="filter_tags_<%= tag %>" style="border-radius: 20px; background-color:white; color: black"><%= tag %></label>
           </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
+        <% end %>
+        <%= f.input :query, input_html: { value: params[:query] }, as: :hidden %>
+        <div style="text-align: center; margin-bottom: 50px">
+          <%= f.submit "Filter", class: "btn btn-travel-primary ml-2"%>
+       </div>
+     </div>
+  <% end %>
+
+
+  <div class ="d-flex flex-column flex-lg-row justify-content-between pt-4">
+      <%= render "shared/cards-grid", flowers: @flowers %>

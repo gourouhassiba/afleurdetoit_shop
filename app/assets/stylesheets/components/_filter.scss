@@ -1,0 +1,22 @@
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-tag {
+  background: #b7b7b7;
+  padding:10px;
+  border-radius: 5px;
+  opacity: .4;
+  flex: 0 0 30%;
+  text-align: center;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  &.active {
+  background: $primary;
+  color: white;
+  opacity: 1;
+  }
+}

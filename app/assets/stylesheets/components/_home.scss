@@ -1,23 +1,28 @@
 
-.btn-flat {
+.btn-gradient {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #1EDD88;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
   transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+  position:absolute;
 }
 
-.btn-flat:hover {
-  background: #1BCB7F;
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
   color: white;
 }
 
 .style_image{
   display: block;
   width: 100%;
-  height: 600px;
-  padding:10px;
-  margin-top: -153px;
+  height: 500px;
+  padding:174px 10px 5px 10px;
+  margin-top: -176px;
+  object-fit: cover;
+  position:relative;
 
 }
 
@@ -29,7 +34,6 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
 }
 
 .banner h1 {
@@ -61,4 +65,96 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.form{
+  margin-left: -135px;
+  padding-top:90px;
+
+}
+
+.btn-travel-primary {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  border: 2px solid blue;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px blue;
+}
+
+.btn-travel-primary:hover {
+  background-color: blue;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-travel-primary:active {
+  box-shadow: 1px 1px 5px blue;
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-tag {
+  padding:10px;
+  border-radius: 5px;
+  opacity: .4;
+  flex: 0 0 30%;
+  text-align: center;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  &.active {
+  background: blue;
+  color: white;
+  opacity: 1;
+  }
+}
+
+.card-product {
+  overflow: hidden;
+  height: 280px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top:80px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 512px;
+  object-fit: scale-down;
+  margin-left:-157px;
+  margin-right:-139px;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.card-product-2{
+  margin-right:10px;
+  margin-left:10px
 }

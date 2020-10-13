@@ -7,19 +7,24 @@
   <meta name="twitter:image:src" content="http://twitter-card.jpg">
   <meta charset="utf-8">
 </head>
+<div classe="container">
       <title style="color: white">A fleur de toit</title>
-      <div class="banner">
-        <%= image_tag "afleurdetoi2.png", :class => "style_image" %>
-        <div class="container align-items-center justify-content-center" style="margin-top: -400px;">
-          <h1 style="  margin: 0;color: white;text-shadow: 1px 1px 3px rgba(0,0,0,0.2);font-size: 32px;font-weight: bold;">A fleur de toit <strong>creative</strong> to <strong>create together</strong>!</h1>
+      <div class="banner" style="padding-bottom:80px;">
+        <%= image_tag "IMG-0670.jpg", :class => "style_image" %>
+        <div class="container align-items-center justify-content-center">
+          <h1 style="margin-top: -230px;color: white;text-shadow: 1px 1px 3px rgba(0,0,0,0.2);font-size: 32px;font-weight: bold;position:relative">A fleur de toit <strong>creative</strong> to <strong>create together</strong>!</h1>
           <p style="  font-size: 20px;color: white;opacity: .7;text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Lorem ipsum.</p>
-          <a class="btn btn-flat" href="flowers" onmouseover="this.style.background='#167FFB';this.style.color='white';" onmouseout="this.style.background='#167FFB';this.style.color='white'" style="    color: white;padding: 8px 24px; border-radius: 4px;background: #167FFB;transition: background 0.3s ease;">View creation</a>
+          <a class="btn btn-gradient" href="flowers" style="position:absolute;te">Boutique</a>
         </div>
       </div>
-      <div class="card-category" style="background-image: url(https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80)">Fleur
-      </div>
-    </body>
-    <div class="card-product" style="  overflow: hidden;height: 120px;background: white;box-shadow: 0 0 15px rgba(0,0,0,0.2);display: flex;align-items: center;}">
+      <div class="card-product">
+        <%= image_tag "IMG-0839.jpg", :class =>"img_steph" %>
+        <div class="card-product-infos">
+          <h2>Product name</h2>
+          <p>Product description with <strong>relevant info</strong> only.</p>
+        </div>
+     </div>
+    <div class="card-product-2" style="  overflow: hidden;height: 120px;background: white;box-shadow: 0 0 15px rgba(0,0,0,0.2);display: flex;align-items: center; margin-top:auto;}">
       <a href="">
         <%= image_tag "119643530_689136318376831_7543250266339039015_n(1).jpg", :class => "img_home"%>
       </a>
@@ -32,4 +37,4 @@
   You can emphasize <em>some words</em>,
   and even <strong>more if needed</strong>
   </p>
-
+</div>

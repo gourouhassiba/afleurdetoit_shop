@@ -1,5 +1,8 @@
-<div class="cards-grid">
+<div class="cards-grid row " style="margin-right: -489px;" >
   <% flowers.each do |flower| %>
-    <%= render "shared/card", flower: flower %>
+    <div class="col-sm-6">
+      <%= render "shared/card", flower: flower %>
+    </div>
   <% end %>
 </div>
+

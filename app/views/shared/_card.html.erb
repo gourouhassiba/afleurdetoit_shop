@@ -1,10 +1,10 @@
 <%= link_to flower_path(flower), :action => 'go', data: {turbolinks: 'false'} do %>
   <!-- TRIP CARD -->
-  <div class="card-container mb-5">
+  <div class="card-container" style="  overflow: hidden; background: white; box-shadow: 0 0 15px rgba(0,0,0,0.2);width: 500px; margin-right:50px; margin-bottom:50px; margin-left:70px">
     <!-- IMAGE & TITLE -->
-    <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
-      <%= image_tag flower.photo_url , class: "card-img-top", style:"height: 300px;" %>
-      <h2 class="card-title"> <%=flower.name%></h2>
+    <div class="card-image">
+      <%= image_tag flower.photo_url , class: "card-img-top", style:"  height: 260px;width: 100%; object-fit: cover;" %>
+
     </div>
 
       <!-- BADGE : Empty -->
@@ -14,20 +14,13 @@
       <!-- Display the owner badge only when current_user is the owner of the trip -->
 
     <!-- CARD INFO -->
-    <div class="card-info">
-      <h3 class="card-destination"><%= flower.price_cents%></h3>
+    <div class="card-info" style="  padding: 16px;display: flex; justify-content: space-between; align-items: center; position: relative;">
+      <h2 class="card-title" style="color: blue "> <%=flower.name%></h2>
+      <h3 class="card-destination" style= " font-size: 16px;font-weight: bold;margin: 0;"><%= flower.price%>€</h3>
       <div class="card-bottom">
-        <p class="card-description"><%= flower.description %></p>
         <div class="card-details">
           <!-- AVERAGE RATING -->
-          <% flower.flower_average_rating.times do %>
-            <li class="list-inline-item star-orange"><i class="fas fa-star"></i></li>
-          <% end %>
-          <% (5 - flower.flower_average_rating).times do %>
-            <li class="list-inline-item star-grey"><i class="fas fa-star"></i></li>
-          <% end %>
           <!-- PRICE RANGE -->
-          <p class="price-range">$ flower.price_cents %></p>
         </div>
       </div>
     </div>

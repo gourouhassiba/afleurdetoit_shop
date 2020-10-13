@@ -1,0 +1,66 @@
+.card-container {
+  position: relative;
+  border-radius: 20px;
+  // height: 400px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  background-size: cover;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  max-width: 80%;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-destination {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-description {
+  flex: 0 0 70%;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0px;
+}
+
+.card-details {
+
+}
+
+.card-details .list-inline-item {
+  margin-right: 0px;
+}
+.card-badges span {
+  border-radius: 20px;
+}
+
+ // ACTIVITY CARD
+.card-container a {
+  color: white;
+}
+
+.card-container a:hover {
+  color: white;
+}

@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'pages#home'
-  resources :blog, only: :index
-  resources :notre_histoire, only: :index
-  resources :events, only: [:index, :show]
-  resources :formations, only: [:index, :show]
   resources :flowers, only: [:index, :show]
   resources :orders, only: [:show, :create] do
     resources :payments, only: :new

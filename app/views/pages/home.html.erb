@@ -1,40 +1,94 @@
 <head>
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@Lewagonparis">
-  <meta name="twitter:title" content="Le Wagon - The French innovative coding school">
-  <meta name="twitter:description" content="Le Wagon is the best French coding school for entrepreneurs. Checkout by yourself the projects of our students. You will be impressed.">
-  <meta name="twitter:creator" content="@Lewagonparis">
-  <meta name="twitter:image:src" content="http://twitter-card.jpg">
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {font-family: "Lato", sans-serif}
+  .mySlides {display: none}
+</style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
 </head>
-<div classe="container">
-      <title style="color: white">A fleur de toit</title>
-      <div class="banner" style="padding-bottom:80px;">
-        <%= image_tag "IMG-0670.jpg", :class => "style_image" %>
-        <div class="container align-items-center justify-content-center">
-          <h1 style="margin-top: -230px;color: white;text-shadow: 1px 1px 3px rgba(0,0,0,0.2);font-size: 32px;font-weight: bold;position:relative">A fleur de toit <strong>creative</strong> to <strong>create together</strong>!</h1>
-          <p style="  font-size: 20px;color: white;opacity: .7;text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Lorem ipsum.</p>
-          <a class="btn btn-gradient" href="flowers" style="position:absolute;te">Boutique</a>
-        </div>
-      </div>
-      <div class="card-product">
-        <%= image_tag "IMG-0839.jpg", :class =>"img_steph" %>
-        <div class="card-product-infos">
-          <h2>Product name</h2>
-          <p>Product description with <strong>relevant info</strong> only.</p>
-        </div>
-     </div>
-    <div class="card-product-2" style="  overflow: hidden;height: 120px;background: white;box-shadow: 0 0 15px rgba(0,0,0,0.2);display: flex;align-items: center; margin-top:auto;}">
-      <a href="">
-        <%= image_tag "119643530_689136318376831_7543250266339039015_n(1).jpg", :class => "img_home"%>
-      </a>
-      <div class="card-product-infos">
-        <h2 style="  font-size: 16px;font-weight: bold;margin: 0;">Stephane, owner Afleurdetoit</h2>
-        <p style="  font-size: 12px;line-height: 1.4;opacity: .7;margin-bottom: 0;margin-top: 8px;">Product description with <strong>relevant info</strong> only.</p>
-      </div>
+
+<body>
+
+  <header class="hero">
+    <%= image_tag "IMG-0670.jpg", :class => "style_image" %>
+    <div class="container spacing" style="    margin-top: -540px; position: relative;">
+      <h1 class="primary-title" style=" margin-left: -28px;">Nos créations a un prix incroyable </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam perspiciatis facilis beatae laudantium
+        quidem enim sit sequi!</p>
+      <a href="flowers" class="btn">Boutique</a>
     </div>
-  <p>
-  You can emphasize <em>some words</em>,
-  and even <strong>more if needed</strong>
-  </p>
-</div>
+  </header>
+    <section class="featured">
+      <div class="container">
+        <h2 class="section-title">Featured products</h2>
+        <div class="split">
+          <a href="#" class="featured__item">
+            <img src="img/shoe-4.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span>shoe name</p>
+          </a>
+          <a href="#" class="featured__item">
+            <img src="img/shoe-5.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span>shoe name</p>
+          </a>
+          <a href="#" class="featured__item">
+            <img src="img/shoe-6.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span>shoe name</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  <div class="cards">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      Breakfast
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+      Lunch
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+      Dinner
+    </div>
+  </div>
+ <section class="intro text-center section-padding" id="intro">
+          <div class="container">
+            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+            <div class="row" style=" justify-content: center;">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">A Creative Portfolio Template</h1>
+                <p>"Fleuriste à proximité du Père Lachaise dans le 20ème arrondissement, nous proposons des bouquets champêtres et mettons en valeur certains produits d'artisanat issus de la gamme Arzinc. Nous vous accueillons autour du bouquet de la semaine mais aussi pouvons vous accompagner au travers de prestations de décorations dans le cadres d’événements."</p>
+              </div>
+            </div>
+          </div>
+        </section>
+</body>
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+

@@ -1,4 +1,4 @@
-<div class="container py-3">
+<div class="container py-3" style="margin-top: 38px;">
   <div class="row">
     <div class="col-sm-12 col-md-6">
       <%= image_tag(@flower.photo_url, width: '100%') %>
@@ -9,7 +9,7 @@
       <p>Amount: <%= humanized_money_with_symbol(@flower.price) %></p>
         <%= form_tag orders_path do %>
           <%= hidden_field_tag 'flower_id', @flower.id %>
-          <%= submit_tag 'Payer', class: 'btn btn-primary' %>
+          <%= submit_tag 'Payer', class: 'btn' %>
         <% end %>
     </div>
   </div>

@@ -1,6 +1,7 @@
-<div class="container" style="margin-right: 302px; margin-top: 41px;">
+<div class="container" style="margin-right: 302px; margin-top: 70px;">
   <div class="container-without-footer" style="display:flex;margin-right: 295px;">
     <h1 class="text-center mt-4">Creations 🤩</h1>
+    <!--
     <%= simple_form_for :filter, url: flowers_path, html: { class: "form"}, method: :get do |f| %>
       <fieldset class="form-group check_boxes required filter_tags mt-5">
         <legend class="col-form-label pt-0">
@@ -21,7 +22,7 @@
             <%= f.submit "Filter", class: "btn btn-travel-primary ml-2"%>
          </div>
        </div>
-    <% end %>
+    <% end %>-->
   <div class ="row" >
       <%= render "shared/card-grid", flowers: @flowers %>
   </div>

@@ -1,28 +1,7 @@
 <div class="container" style="margin-right: 302px; margin-top: 70px;">
   <div class="container-without-footer" style="display:flex;margin-right: 295px;">
     <h1 class="text-center mt-4">Creations 🤩</h1>
-    <!--
-    <%= simple_form_for :filter, url: flowers_path, html: { class: "form"}, method: :get do |f| %>
-      <fieldset class="form-group check_boxes required filter_tags mt-5">
-        <legend class="col-form-label pt-0">
-          Choose your categories <abbr title="required">*</abbr>
-        </legend>
-        <input type="hidden" name="filter[tags][]" value="">
-      </fieldset>
 
-        <div class="filter-tags">
-          <% Flower.all.map(&:tags).flatten.uniq.each do |tag| %>
-            <div class="form-check" style="margin-bottom: 14px;">
-              <input class="form-check-input check_boxes required d-none" type="checkbox" value="<%= tag %>" name="filter[tags][]" id="filter_tags_<%= tag %>" <%= 'checked' if @selected_filters.include?(tag.name) %>>
-              <label class="form-check-label collection_check_boxes filter-tag <%= 'active' if @selected_filters.include?(tag.name) %>" for="filter_tags_<%= tag %>"><%= tag %></label>
-            </div>
-          <% end %>
-          <%= f.input :query, input_html: { value: params[:query] }, as: :hidden %>
-          <div style="text-align: center; margin-bottom: 50px">
-            <%= f.submit "Filter", class: "btn btn-travel-primary ml-2"%>
-         </div>
-       </div>
-    <% end %>-->
   <div class ="row" >
       <%= render "shared/card-grid", flowers: @flowers %>
   </div>
